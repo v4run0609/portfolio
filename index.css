@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+    background: linear-gradient(-45deg, #3b3b3b, #2c2c54, #1c1c34, #1a1a2e);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+.light-theme {
+    background: linear-gradient(-45deg, #f8f9fa, #e9ecef, #dee2e6, #ced4da);
+    color: #101010;
+}
+
+.dark-theme {
+    background: black;
+    color: #fff;
+}
+
+
+header {
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+header.light-theme {
+    background: rgba(18, 17, 17, 0.8);
+    color: #fdfafa;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links li a.light-theme {
+    color: #333;
+}
+
+.logo {
+    flex-grow: 1;
+    text-align: center;
+    
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.social-media a.light-theme {
+    color: #333;
+}
+
+.theme-toggle {
+    background: none;
+    border: 2px solid #fff;
+    color: #b98b8b;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.theme-toggle.light-theme {
+    border: 2px solid #333;
+    color: #333;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+section.light-theme {
+    background: rgba(19, 18, 18, 0.8);
+}
+
+.project {
+    border: 1px solid #5c5151;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.about-content, .myself-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-image, .myself-image {
+    max-width: 400px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
